@@ -31,5 +31,13 @@ pipeline {
                 '''
             }
         }
+        stage('This is second add while hooking') {
+            steps {
+                sh '''
+                echo "Disk usage"
+                df -h
+                '''
+            }
+        }
     }
 }
