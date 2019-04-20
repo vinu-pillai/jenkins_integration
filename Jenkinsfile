@@ -23,5 +23,13 @@ pipeline {
                 '''
             }
         }
+         stage('This add while hooking') {
+            steps {
+                sh '''
+                echo "UNAME output"
+                uname -a
+                '''
+            }
+        }
     }
 }
